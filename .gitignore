@@ -5,6 +5,7 @@
 ssl
 *.env
 appsettings.json
+appsettings.Development.json
 datingapp.db
 # User-specific files
 *.rsuser
