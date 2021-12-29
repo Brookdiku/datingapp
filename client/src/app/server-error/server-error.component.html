@@ -1,0 +1,14 @@
+<h4>Internal Server Error! refrashing the page will make the error dissapear!</h4>
+<ng-container *ngIf="error" >
+    <h5 class="text-danger">{{ error.message }}</h5>
+    <p>What to do next?</p>
+    <ol>
+        <li>Open the crome dev tools</li>
+        <li>Inespect the netowrk tab</li>
+        <li>Check the failing request</li>
+        <li>Examine the request Url - make sure its correct</li>
+        <li>Reproduce the error with postmon -if we see the same response the issue is not with Angular</li>
+    </ol>
+    <p>following is the stack trace</p>
+    <code class=" text-danger mt-5">{{ error.details }}</code>
+</ng-container>
